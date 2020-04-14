@@ -4,3 +4,17 @@
 /* PostgreSQL/PostGIS */
 /* Conseil régional Nouvelle-Aquitaine - https://cartographie.nouvelle-aquitaine.fr/ */
 /* Auteur : Tony VINCENT */
+
+------------------------------------------------------------------------
+-- Schéma Geo
+------------------------------------------------------------------------
+GRANT USAGE ON SCHEMA geo TO "pre-sig-ro";
+GRANT ALL ON SCHEMA geo TO "pre-sig-usr"
+
+
+------------------------------------------------------------------------
+-- Schéma met_plan_urgence
+------------------------------------------------------------------------
+GRANT USAGE ON SCHEMA met_plan_urgence TO "pre-sig-ro";
+GRANT ALL ON SCHEMA met_plan_urgence TO "pre-sig-usr"
+
