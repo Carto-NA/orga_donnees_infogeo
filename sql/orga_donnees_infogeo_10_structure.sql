@@ -4,3 +4,13 @@
 /* PostgreSQL/PostGIS */
 /* Conseil régional Nouvelle-Aquitaine - https://cartographie.nouvelle-aquitaine.fr/ */
 /* Auteur : Tony VINCENT */
+
+
+------------------------------------------------------------------------ 
+-- Schéma : Création des schémas
+------------------------------------------------------------------------
+
+-- Schema: met_plan_urgence
+CREATE SCHEMA IF NOT EXISTS met_plan_urgence;
+
+COMMENT ON SCHEMA met_plan_urgence IS 'Schéma pour les données sur le plan d''urgence';
