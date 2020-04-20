@@ -14,3 +14,9 @@
 CREATE SCHEMA IF NOT EXISTS met_plan_urgence;
 
 COMMENT ON SCHEMA met_plan_urgence IS 'Schéma pour les données sur le plan d''urgence';
+
+
+-- Schema: met_zon
+CREATE SCHEMA IF NOT EXISTS met_zon;
+
+COMMENT ON SCHEMA met_zon IS 'Schéma pour les données métiers sur les zonages';
