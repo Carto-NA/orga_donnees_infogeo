@@ -18,3 +18,9 @@ GRANT ALL ON SCHEMA geo TO "pre-sig-usr";
 GRANT USAGE ON SCHEMA met_plan_urgence TO "pre-sig-ro";
 GRANT ALL ON SCHEMA met_plan_urgence TO "pre-sig-usr";
 
+
+------------------------------------------------------------------------
+-- Schéma met_plan_urgence
+------------------------------------------------------------------------
+GRANT ALL ON SCHEMA met_zon TO "pre-sig-usr";
+GRANT USAGE ON SCHEMA met_zon TO "pre-sig-ro";
