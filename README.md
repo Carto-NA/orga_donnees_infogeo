@@ -1,10 +1,20 @@
-# orga_donnees_infogeo
-Organisation de la base de données "information géographique"
+# Organisation de la base de données "information géographique"
+====
+
+Ce document nous permet de définir un certain nombre de règles et bonnes pratiques pour organiser et gérer au mieux la base de données *"information géographique"*.
+
+* Organiser et structurer les données de référence et métier en lien avec l’information géographique
+* Gérer et maintenir les données de référence
+* Maintenir le bon fonctionnement des bases de données
+* Distribuer et faciliter l’accessibilité aux données
+
 
 
 Règles de dénomination des objets de la base de données
-====
-	1. Les noms de schéma, table, champ, vue, ... doivent être écrit en minuscule pour éviter l’utilisation des guillemets "[nom_table]" dans les requêtes sql).
+----
+	
+1. Les noms de schéma, table, champ, vue, ... doivent être écrit en minuscule pour éviter l’utilisation des guillemets "[nom_table]" dans les requêtes sql).
+
 2. Pour écrire 2 mots, il faut privilégier l’utilisation d’un underscore. 
     >Exemple : il faut plutôt utiliser "date_inscription" que "DateInscription"
 
