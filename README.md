@@ -1,4 +1,4 @@
-# Organisation de la base de données "information géographique"
+Organisation de la base de données "information géographique"
 ====
 
 Ce document nous permet de définir un certain nombre de règles et bonnes pratiques pour organiser et gérer au mieux la base de données *"information géographique"*.
@@ -7,7 +7,6 @@ Ce document nous permet de définir un certain nombre de règles et bonnes prati
 * Gérer et maintenir les données de référence
 * Maintenir le bon fonctionnement des bases de données
 * Distribuer et faciliter l’accessibilité aux données
-
 
 
 Règles de dénomination des objets de la base de données
@@ -33,7 +32,7 @@ Règles de dénomination des objets de la base de données
         La colonne peut contenir "fk" pour Foreign Key, le préfixe,  puis le nom de la table et enfin se terminer par le nom de la colonne "code". 
         >Exemple : une colonne pourrait s’intituler "fk_m_agr_user_code" (cf. préfixe "m_agr", foreign key sur la table utilisateur de la colonne "code").
 
-    * Toujours intitulé de façon similaire certains champs tels que : date de mise à jours (date_update), date de création (date_insert), ...
+    * Toujours intitulé de façon similaire certain champs tel que : code INSEE, nom commune, date de mise à jours (date_update), date de création (date_insert), ...
         - adresse
         - adresse_cplt
         - nom
