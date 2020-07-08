@@ -2,7 +2,17 @@
 Organisation de la base de données "information géographique"
 
 
-Bonnes pratiques
+## Règles de dénomination des objets de la base de données
+=========================================================
+
+titre 2 
+-------------------------------
+
+titre 3
+___________________________
+
+### Schéma
+	Les noms de schéma, table, champ, vue, ... doivent être écrit en minuscule pour éviter l’utilisation des guillemets "[nom_table]" dans les requêtes sql).
 
 * Ne pas utiliser les mots réservés
     https://www.postgresql.org/docs/9.2/sql-keywords-appendix.html
