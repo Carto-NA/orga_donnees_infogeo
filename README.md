@@ -9,7 +9,7 @@ Ce document nous permet de définir un certain nombre de règles et bonnes prati
 * Distribuer et faciliter l’accessibilité aux données
 
 
-Règles de dénomination des objets de la base de données
+Règles de dénomination des objets de la base de données (hors données issu de producteurs officiels)
 ----
 	
 1. Les noms de schéma, table, champ, vue, ... doivent être écrit en minuscule pour éviter l’utilisation des guillemets "[nom_table]" dans les requêtes sql).
