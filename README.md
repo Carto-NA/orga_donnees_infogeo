@@ -3,13 +3,13 @@ Organisation de la base de données "information géographique"
 
 
 ## Règles de dénomination des objets de la base de données
-=========================================================
 
-titre 2 
--------------------------------
 
-titre 3
-___________________________
+### titre 2 
+
+
+#### titre 3
+
 
 ### Schéma
 	Les noms de schéma, table, champ, vue, ... doivent être écrit en minuscule pour éviter l’utilisation des guillemets "[nom_table]" dans les requêtes sql).
