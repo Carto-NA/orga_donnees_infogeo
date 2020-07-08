@@ -1,10 +1,11 @@
 Dénomination des champs communs
 ====
 
-[Nom][Nom BdD][Type][Descritpion]
+| Nom   | Nom BdD       | Type | Descritpion |
+| Adresse | adresse | text | >10 rue de la vallée |
+| Adresse complémentaire | adresse_cplt | text | >Bâtiment 3 |
 
 
-|Adresse|adresse|text| 10 rue de la vallée|
         - adresse_cplt
    adresse|text| 10 rue de la vallée|  - prenom
         - fonction
@@ -19,3 +20,10 @@ Dénomination des champs communs
         - nomcom
         - code_postal
         - numdep
+
+
+| Format        | Syntaxe      | Exemple |
+| ------|-----|-----|
+| Italique  	| \*Texte\* 	| *C'est en italique* 	|
+| Gras 	| \*\*Gras\*\* 	| **C'est en bold** 	|
+| Lien 	| \[Description\](url ici) 	| Un [lien](http://www.github.com) 	|
