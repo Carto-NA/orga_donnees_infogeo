@@ -6,13 +6,13 @@ Organisation de la base de données "information géographique"
 
 
 ### titre 2 
-
+====
 
 #### titre 3
-
+-----
 
 ### Schéma
-	Les noms de schéma, table, champ, vue, ... doivent être écrit en minuscule pour éviter l’utilisation des guillemets "[nom_table]" dans les requêtes sql).
+	1. Les noms de schéma, table, champ, vue, ... doivent être écrit en minuscule pour éviter l’utilisation des guillemets "[nom_table]" dans les requêtes sql).
 
 * Ne pas utiliser les mots réservés
     https://www.postgresql.org/docs/9.2/sql-keywords-appendix.html
