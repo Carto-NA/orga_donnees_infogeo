@@ -33,24 +33,8 @@ Règles de dénomination des objets de la base de données (hors données issu d
         >Exemple : une colonne pourrait s’intituler "fk_m_agr_user_code" (cf. préfixe "m_agr", foreign key sur la table utilisateur de la colonne "code").
 
     * Toujours intitulé de façon similaire certain champs tel que : code INSEE, nom commune, date de mise à jours (date_update), date de création (date_insert), ...
-    | \[Description text\](url here) 	| A [link](http://www.github.com) 	|
-    [Voir la liste des champs génériques ...](nom_champ.md)
-        - adresse
-        - adresse_cplt
-        - nom
-        - prenom
-        - fonction
-        - courriel
-        - site_web
-        - photo
-        - telephone_fixe
-        - telephone_mobile
-        - commentaire
-        - geom
-        - numcom
-        - nomcom
-        - code_postal
-        - numdep
+
+    >[Dénomination des champs communs ...](nom_champ.md)
     
 
 
