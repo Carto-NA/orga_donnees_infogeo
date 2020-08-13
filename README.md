@@ -12,7 +12,7 @@ Ce document nous permet de définir un certain nombre de règles et bonnes prati
 Règles de dénomination des objets de la base de données (hors données issu de producteurs officiels)
 ----
 	
-1. Les noms de schéma, table, champ, vue, ... doivent être écrit en minuscule pour éviter l’utilisation des guillemets "[nom_table]" dans les requêtes sql).
+1. Les noms de schéma, table, champ, vue, ... doivent être écrit en minuscule pour éviter l’utilisation des guillemets "[nom_table]" dans les requêtes sql.
 
 2. Pour écrire 2 mots, il faut privilégier l’utilisation d’un underscore. 
     >Exemple : il faut plutôt utiliser "date_inscription" que "DateInscription"
