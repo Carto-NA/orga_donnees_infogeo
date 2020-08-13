@@ -8,7 +8,7 @@ La dénomination des attributs reste libre mais doit-être explicite et faire l'
 Seuls certains champs doivent respectés une règle de nommage et doivent être présents dans l'ensemble des tables des données gérées par l'Agglomération lorsque cela est nécessaire :
 | Champ| Type | Contrainte | Descritpion |
 |----|----|----|----|
-|id | serial | not null | Identifiant non signifiant|
+|id | serial | not null | Identifiant non signifiant |
 | numcom | varchar(5) | Code INSEE de la commune |
 | nomcom | varchar(150) | Libellé de la commune |
 | sirencom | varchar(9) | Code SIREN de la commune |
@@ -19,23 +19,28 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 | numepci | varchar(9) | Code EPCI |
 | nomepci | varchar(150) | Libellé d'EPCI |
 | typeepci | varchar(2) | Type d'EPCI |
-| nomtc | varchar(9) | Code du territoire de contractualisation |
+| numtc | varchar(9) | Code du territoire de contractualisation |
+| nomtc | varchar(200) | Nom du territoire de contractualisation |
+| numte |  varchar(9) | Code du territoire de contractualisation |
 | nomte |  varchar(150) | Libellé du territoire de contractualisation |
 | numcadet | varchar(11) | Code du territoire CADET |
 | nomcadet | varchar(150) | Libellé du territoire CADET |
 | numte | varchar(5) | Code du territoire d'élu |
 | nomte | varchar(150) | Libellé du territoire d'élu |
 |  |  |  |
-| adresse | text | >10 rue de la vallée |
-| adresse_cplt | text | >Bâtiment 3 |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| comentaire | text | Commentaires |
+| adresse | text | Adresse >10 rue de la vallée |
+| adr_cplt | text | Complément de l'adresse >Bâtiment 3 |
+| code_post | varchar(5) | Code postal de la commune |
+| courriel | varchar(254) | Courriel |
+| tel_fixe | varchar(10) | Numéro de téléphone fixe |
+| tel_mobile | varchar(10) | Numéro de téléphone portable |
+| fax | varchar(10) | Numéro de fax |
+| photo | text | Url de la photo |
+| style_code |  | Code couelur en hexadécimal |
+| commentaire | text | Commentaires |
 | geom |  | Géométrie de l'objet |
 | src_geom |  | Code du référentiel géographique utilisé pour la saisie (référence à la table de valeur lt_src_geom) |
-| annee_donnees | varchar(4) | Année de la données |
+| annee | varchar(4) | Année de la donnée |
 | semantique_val | boolean | La donnée sémantique est validée |
 | geometrie_val | boolean | La géométrie est validée |
 | date_sai  | Date d'import/ajout de la donnée dans la base |
