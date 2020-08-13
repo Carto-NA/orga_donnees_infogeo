@@ -14,6 +14,8 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 | sirencom | varchar(9) | |  Code SIREN de la commune |
 | numreg | varchar(2) | |  Code de la région |
 | nomreg | varchar(150) | |  Libellé de la région |
+| numreg2015 | varchar(2) | |  Code de la région avant le 31 décembre 2015 |
+| nomreg2015 | varchar(150) | |  Libellé de la région avant le 31 décembre 2015 |
 | numdep | varchar(2) | |  Code du département |
 | nomdep | varchar(150) | |  Libellé du département |
 | numepci | varchar(9)  | | Code EPCI |
