@@ -17,20 +17,21 @@ Règles de dénomination des objets de la base de données (hors données issu d
 2. Pour écrire 2 mots, il faut privilégier l’utilisation d’un underscore. 
     >Exemple : il faut plutôt utiliser "date_inscription" que "DateInscription"
 
-3. Noms de tables
+3. Noms de table
+    * Préfixer le nom des tables
     * Utiliser un nom représentatif du contenu
     * Utiliser un seul mot lorsque c'est possible
     * Privilégier le singulier
     * Penser à des noms génériques
-    * Préfixer les noms des tables
+    
 
 4. Noms de colonne
     * Préfixer toutes les colonnes
-        >C’est beaucoup plus pratique lorsqu’il convient d’effectuer des jointures.
+        >Plus pratique lorsqu’il convient d’effectuer des jointures.
 
     * Lorsqu’une clé étrangère est utilisée ("Foreign Key"), il est pratique de l’indiquer dans le nom de la colonne. 
         La colonne peut contenir "fk" pour Foreign Key, le préfixe,  puis le nom de la table et enfin se terminer par le nom de la colonne "code". 
-        >Exemple : une colonne pourrait s’intituler "fk_m_agr_user_code" (cf. préfixe "m_agr", foreign key sur la table utilisateur de la colonne "code").
+        >Exemple : une colonne pourrait s’intituler "fk_m_agr_user_code" (cf. préfixe "m_agr", foreign key sur la table "user" de la colonne "code").
 
     * Toujours intitulé de façon similaire certain champs tel que : code INSEE, nom commune, date de mise à jours (date_maj), date de création (date_sai), ...
 
