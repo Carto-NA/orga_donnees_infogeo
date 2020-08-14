@@ -1,4 +1,10 @@
--- ################################################################# Domaine valeur - source du référentiel geom  ###############################################
+Domaines de valeurs - source du référentiel géographique métier
+====
+
+*Listes de valeur qui permettent d'avoir une cohérence dans la saisie de champ commun à plusieurs bases ou tables.*
+
+
+-- ################################################################# Listes de valeurs  ###############################################
 
 -- Table: r_objet.lt_src_geom
 
