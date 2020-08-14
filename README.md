@@ -53,12 +53,13 @@ Commenter les objets
 ----
 
 Les objets (schéma, table, attribut, vue, trigger, ...) contenu dans la base de données doit être commenté comme suit :
-•	un schéma : description succincte du contenu et de l'usage générique des données
-•	une table : description succincte du contenu, de l'usage et des particularités si besoin
-•	un attribut : libellé complet et description succincte si besoin
-•	une séquence : description de l'usage, de la table et de l'attribut cible
-•	un trigger / une fonction / une règle : description succincte de son fonctionnement
-•	une vue : description succincte de son contenu et de son usage
+
+* un schéma : description succincte du contenu et de l'usage générique des données
+* une table : description succincte du contenu, de l'usage et des particularités si besoin
+* un attribut : libellé complet et description succincte si besoin
+* une séquence : description de l'usage, de la table et de l'attribut cible
+* un trigger / une fonction / une règle : description succincte de son fonctionnement
+* une vue : description succincte de son contenu et de son usage
 
 Les contraintes sur les attributs ainsi que les indexes n'ont pas d'obligation de commentaires.
 
