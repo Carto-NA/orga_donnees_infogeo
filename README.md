@@ -77,4 +77,4 @@ titre 3
 
 | Thématique |  Nom du schéma | Description |
 | ---- | ---- | ---- |
-| Infrastru met_inf | cture | met_inf | 
+| Infrastructure | met_inf | Données métiers sur les infrastructures/batiments structurant de la région | 
