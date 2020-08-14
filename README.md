@@ -73,29 +73,8 @@ titre 3
 
 ### Schéma
 
-* Ne pas utiliser les mots réservés
-    https://www.postgresql.org/docs/9.2/sql-keywords-appendix.html
-    
-    Exemples : date, and, all, ...
+* Dénomination des schémas
 
-* Ne pas utiliser de caractères spéciaux
-
-* Eviter les majuscules
-    Pour écrire 2 mots, il faut privilégier l’utilisation d’un underscore. 
-    
-    Exemple : il faut plutôt utiliser "date_inscription" que "DateInscription"
-    
-* Eviter l'utilisation d'abréviation 
-
-
-== Noms de tables
-
-* Utiliser un nom représentatif du contenu
-
-* Utiliser un seul mot lorsque c'est possible
-
-* Privilégier le singulier
-
-* Penser à des noms génériques
-
-* Préfixer les noms des tables
+| Thématique |  Nom du schéma | Description |
+| ---- | ---- | ---- |
+| Infrastru met_inf | cture | met_inf | 
