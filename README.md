@@ -10,9 +10,10 @@ Les objectifs :
 	* Maintenir le bon fonctionnement des bases de données
 	* Distribuer et faciliter l’accessibilité aux données
 
-```**_Audit :_**
->+ _Harmoniser les pratiques en matière de chargement et de stockage des données._
->+ _Améliorer et décrire les processus et les méthodes de production d'un lot de données._```
+
+`**_Audit :_**
+_Harmoniser les pratiques en matière de chargement et de stockage des données._
+_Améliorer et décrire les processus et les méthodes de production d'un lot de données._`
 
 
 Productions nécessaires :
@@ -27,6 +28,7 @@ Productions nécessaires :
 	[] Schéma d'alimentation des données (admin SIG, cartographe, métier, ...)
 	[] ...
 
+*Abandon du serveur de fichiers SHAPE ?*
 
 Règles de dénomination des objets de la base de données (hors données issu de producteurs officiels)
 ----
