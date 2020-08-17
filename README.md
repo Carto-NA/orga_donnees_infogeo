@@ -40,9 +40,9 @@ Si non :
 - ...
 </br></br>
 
-# Quelques définitions
+## Quelques définitions
 
-* Référentiel géographique et statistique
+* **Référentiel géographique et statistique**
 
 	*Un référentiel géographique et statistique est un ensemble minimal de données complémentaires, cohérentes et maintenues, permettant de localiser directement ou indirectement des données et de produire d'autres informations géographiques (données métier, …).*
 
@@ -50,18 +50,64 @@ Si non :
 
 	*Les référentiels géographiques peuvent exister à différentes échelles, des plus petites (précision 1 km) aux plus grandes (précision quelques cm).*
 
-* Référentiel métier
+* **Référentiel métier**
 
 	*C'est une donnée thématique construite pour répondre aux besoins des services de la Région.
 Les directions métiers ont la responsabilité de cette information.*
 
-* Identifiant signifiant
+* **Identifiant signifiant**
 
 	*C’est un identifiant qui comporte tout ou partie de l’information contenu dans les éléments de données décrivant l’objet auquel il se rapporte.*
 
-* Identifiant non signifiant
+* **Identifiant non signifiant**
 	*C’est un identifiant qui ne comporte qu’une seule information : celle nécessaire à distinguer l’objet qu’il cible de son environnement.*
 
+
+ ## Choix du référentiel géographique métier
+
+Jeu de données validé par l’unité SIT/SIG comme étant un produit géographique sur lesquels peuvent s'appuyer de nouvelles constructions géométriques.
+
+Il est ainsi possible pour l'utilisateur de :
+	* superposer le référentiel géographique métier et les données métiers,
+	* créer, numériser ses données métiers et les localiser sur un référentiel géographique commun.
+
+Le choix du référentiel est capital car l'usage d'un référentiel non adapté génère des erreurs de localisation des objets pouvant avoir des conséquences importantes.
+L'usage d'un référentiel géographique est indispensable pour garantir la bonne superposition des couches des différentes couches d'objets (voir exemple 1) échanger des données avec des partenaires : l'usage de référentiels différents entre partenaires ne permet pas de réutiliser les données dans de bonnes conditions, certaines aberrations pouvant apparaître (voir exemple 2)
+
+Les objectifs du projet et son échelle influent sur le référentiel à utiliser.
+Le choix du référentiel est la première étape dans le choix des données, une fois le projet défini.
+
+***Quel référentiel géographique doit-on utiliser ?***
+
+</br></br>
+
+## Base de données
+
+SIT
+
+	Nom de la machine : [hostname]
+	Adresse IP : xx.xx.xx.xx
+	Port : xxxx
+
+SIG
+
+	Nom de la machine : [hostname]
+	Adresse IP : xx.xx.xx.xx
+	Port : 5432
+
+
+***Dans quel cas on utilise la géométrie :***
+- ESRI
+	*Et quoniam apud eos ut in capite mundi morborum acerbitates celsius dominantur, ad quos vel sedandos omnis professio medendi torpescit, excogitatum est adminiculum sospitale nequi amicum perferentem similia videat, additumque est cautionibus paucis remedium aliud satis validum, ut famulos percontatum missos quem ad modum valeant noti hac aegritudine colligati, non ante recipiant domum quam lavacro purgaverint corpus. ita etiam alienis oculis visa metuitur labes.*
+
+- PostGIS
+	*Et quoniam apud eos ut in capite mundi morborum acerbitates celsius dominantur, ad quos vel sedandos omnis professio medendi torpescit, excogitatum est adminiculum sospitale nequi amicum perferentem similia videat, additumque est cautionibus paucis remedium aliud satis validum, ut famulos percontatum missos quem ad modum valeant noti hac aegritudine colligati, non ante recipiant domum quam lavacro purgaverint corpus. ita etiam alienis oculis visa metuitur labes.*
+
+
+## Organisation de la base
+
+
+</br></br>
 
 * Dictionnaire des données
 
