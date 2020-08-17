@@ -12,13 +12,12 @@ Les objectifs :
 
 
 >_**Audit :**_
->+ _Harmoniser les pratiques en matière de chargement et de stockage des données._
->+ _Améliorer et décrire les processus et les méthodes de production d'un lot de données._
+>>+ _Harmoniser les pratiques en matière de chargement et de stockage des données._
+>>+ _Améliorer et décrire les processus et les méthodes de production d'un lot de données._
 
 
 
 Productions nécessaires :
-
 	[x] Guides des bonnes pratiques pour la bdd
 	[x] Phasage d'intégration de données
 	[] Organisation de la base de données
