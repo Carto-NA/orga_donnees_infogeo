@@ -1,12 +1,26 @@
 Organisation de la base de données "information géographique"
 ====
 
-Ce document nous permet de définir un certain nombre de règles et bonnes pratiques pour organiser et gérer au mieux la base de données *"information géographique"*.
+Ce document nous permet de définir un certain nombre de règles et bonnes pratiques pour organiser et gérer au mieux la base de données *"information géographique et territoriale"*.
 
-* Organiser et structurer les données de référence et métier en lien avec l’information géographique
-* Gérer et maintenir les données de référence
-* Maintenir le bon fonctionnement des bases de données
-* Distribuer et faciliter l’accessibilité aux données
+Les objectifs :
+
+	* Organiser et structurer les données de référence et métier en lien avec l’information géographique
+	* Gérer et maintenir les données de référence
+	* Maintenir le bon fonctionnement des bases de données
+	* Distribuer et faciliter l’accessibilité aux données
+
+``` go
+Audit :
+	+ Harmoniser les pratiques en matière de chargement et de stockage des données.
+	+ Améliorer et décrire les processus et les méthodes de production d'un lot de données.
+```
+
+Productions nécessaires :
+
+-[x] Guides des bonnes pratiques pour la bdd
+-[] Phasage d'intégration de données
+-[] 
 
 
 Règles de dénomination des objets de la base de données (hors données issu de producteurs officiels)
@@ -77,5 +91,7 @@ titre 3
 * Dénomination des schémas
 
 | Thématique |  Nom du schéma | Description |
-| ---- | ---- | ---- |
+| :----: | :----: | :----: |
+| Agriculture | met_agr | Données métiers sur l'agriculture |
+| Economie | met_eco | Données métiers sur l'économie |
 | Infrastructure | met_inf | Données métiers sur les infrastructures/batiments structurant de la région | 
