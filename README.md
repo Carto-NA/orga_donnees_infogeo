@@ -104,10 +104,21 @@ SIG
 	*Et quoniam apud eos ut in capite mundi morborum acerbitates celsius dominantur, ad quos vel sedandos omnis professio medendi torpescit, excogitatum est adminiculum sospitale nequi amicum perferentem similia videat, additumque est cautionibus paucis remedium aliud satis validum, ut famulos percontatum missos quem ad modum valeant noti hac aegritudine colligati, non ante recipiant domum quam lavacro purgaverint corpus. ita etiam alienis oculis visa metuitur labes.*
 
 
-## Organisation de la base
+## Organisation de la base de données
+
+- referentiel
+
+
+- metier
+
+
+- xapps
+
+
 
 
 </br></br>
+
 
 * Dictionnaire des données
 
