@@ -1,7 +1,7 @@
-Organisation de la base de données "information géographique et territoriale"
+Organisation de la base de données sur l'information "géographique et territoriale"
 ====
 
-Ce document nous permet de définir un certain nombre de règles et bonnes pratiques pour organiser et gérer au mieux la base de données *"information géographique et territoriale"*.
+Ce document nous permet de définir un certain nombre de règles et bonnes pratiques pour organiser et gérer au mieux la base de données sur l'information *"géographique et territoriale"*.
 
 Les objectifs :
 
@@ -9,12 +9,12 @@ Les objectifs :
 	* Gérer et maintenir les données de référence
 	* Maintenir le bon fonctionnement des bases de données
 	* Distribuer et faciliter l’accessibilité aux données
+</br>
 
-
->**_Audit :_**
-> + *_Harmoniser les pratiques en matière de chargement et de stockage des données._*
-> + *_Améliorer et décrire les processus et les méthodes de production d'un lot de données._*
-
+>**_Préconnisations de l'audit :_**
+>	+ *_Harmoniser les pratiques en matière de chargement et de stockage des données._*
+>	+ *_Améliorer et décrire les processus et les méthodes de production d'un lot de données._*
+</br>
 
 *******
 Productions nécessaires :
@@ -30,7 +30,7 @@ Productions nécessaires :
 	[] Schéma d'alimentation des données (admin SIG, cartographe, métier, ...)
 	[] ...
 *******
-
+</br></br>
 
 ***Abandon du serveur de fichiers SHAPE ?***
 
@@ -38,23 +38,29 @@ Si non :
 - Le conserver pour quoi faire ? 
 - Qui le gére ?
 - ...
-
+</br></br>
 
 # Quelques définitions
 
 * Référentiel géographique et statistique
 
-Un référentiel géographique et statistique est un ensemble minimal de données complémentaires, cohérentes et maintenues, permettant de localiser directement ou indirectement des données et de produire d'autres informations géographiques (données métier, …).
+	*Un référentiel géographique et statistique est un ensemble minimal de données complémentaires, cohérentes et maintenues, permettant de localiser directement ou indirectement des données et de produire d'autres informations géographiques (données métier, …).*
 
-Ces référentiels sont produits et entretenus par des producteurs nationaux (ministère, institut, agence, ...) et locaux sont considérées comme des référentiels. 
+	*Ces référentiels sont produits et entretenus par des producteurs nationaux (ministère, institut, agence, ...) et locaux sont considérées comme des référentiels.* 
 
-Les référentiels géographiques peuvent exister à différentes échelles, des plus petites (précision 1 km) aux plus grandes (précision quelques cm). 
-
+	*Les référentiels géographiques peuvent exister à différentes échelles, des plus petites (précision 1 km) aux plus grandes (précision quelques cm).*
 
 * Référentiel métier
 
-C'est une donnée thématique construite pour répondre aux besoins des services de la Région.
-Les directions métiers ont la responsabilité de cette information.
+	*C'est une donnée thématique construite pour répondre aux besoins des services de la Région.
+Les directions métiers ont la responsabilité de cette information.*
+
+* Identifiant signifiant
+
+	*C’est un identifiant qui comporte tout ou partie de l’information contenu dans les éléments de données décrivant l’objet auquel il se rapporte.*
+
+* Identifiant non signifiant
+	*C’est un identifiant qui ne comporte qu’une seule information : celle nécessaire à distinguer l’objet qu’il cible de son environnement.*
 
 
 * Dictionnaire des données
