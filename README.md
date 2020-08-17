@@ -12,9 +12,8 @@ Les objectifs :
 
 
 >_**Audit :**_
-
->	_+ Harmoniser les pratiques en matière de chargement et de stockage des données.
->	+ Améliorer et décrire les processus et les méthodes de production d'un lot de données._
+>	+ _Harmoniser les pratiques en matière de chargement et de stockage des données._
+>	+ _Améliorer et décrire les processus et les méthodes de production d'un lot de données._
 
 
 Productions nécessaires :
