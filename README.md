@@ -17,10 +17,16 @@ Audit :
 ```
 
 Productions nécessaires :
-
--[x] Guides des bonnes pratiques pour la bdd
--[] Phasage d'intégration de données
--[] 
+	[x] Guides des bonnes pratiques pour la bdd
+	[x] Phasage d'intégration de données
+	[] Organisation de la base de données
+	[] Ensemble de procédures
+	[x] Modèle de dictionnaire de données
+	[] Calendrier de mise à jour annuel des données
+	[] Catalogue de données
+	[] Liste des référentiels géographiques utilisés auparavant
+	[] Schéma d'alimentation des données (admin SIG, cartographe, métier, ...)
+	[] ...
 
 
 Règles de dénomination des objets de la base de données (hors données issu de producteurs officiels)
