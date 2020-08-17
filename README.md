@@ -11,12 +11,14 @@ Les objectifs :
 	* Distribuer et faciliter l’accessibilité aux données
 
 
-`**_Audit :_**
-_Harmoniser les pratiques en matière de chargement et de stockage des données._
-_Améliorer et décrire les processus et les méthodes de production d'un lot de données._`
+>**_Audit :_**
+>	*_- Harmoniser les pratiques en matière de chargement et de stockage des données._*
+>	*_- Améliorer et décrire les processus et les méthodes de production d'un lot de données._*
 
 
+*******
 Productions nécessaires :
+
 	[x] Guides des bonnes pratiques pour la bdd
 	[x] Phasage d'intégration de données
 	[] Organisation de la base de données
@@ -27,6 +29,7 @@ Productions nécessaires :
 	[] Liste des référentiels géographiques utilisés auparavant
 	[] Schéma d'alimentation des données (admin SIG, cartographe, métier, ...)
 	[] ...
+*******
 
 *Abandon du serveur de fichiers SHAPE ?*
 
