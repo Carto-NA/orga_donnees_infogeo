@@ -1,4 +1,4 @@
-Organisation de la base de données "information géographique"
+Organisation de la base de données "information géographique et territoriale"
 ====
 
 Ce document nous permet de définir un certain nombre de règles et bonnes pratiques pour organiser et gérer au mieux la base de données *"information géographique et territoriale"*.
@@ -31,7 +31,44 @@ Productions nécessaires :
 	[] ...
 *******
 
-*Abandon du serveur de fichiers SHAPE ?*
+
+***Abandon du serveur de fichiers SHAPE ?***
+
+Si non : 
+- Le conserver pour quoi faire ? 
+- Qui le gére ?
+- ...
+
+
+# Quelques définitions
+
+* Référentiel géographique et statistique
+
+Un référentiel géographique et statistique est un ensemble minimal de données complémentaires, cohérentes et maintenues, permettant de localiser directement ou indirectement des données et de produire d'autres informations géographiques (données métier, …).
+
+Ces référentiels sont produits et entretenus par des producteurs nationaux (ministère, institut, agence, ...) et locaux sont considérées comme des référentiels. 
+
+Les référentiels géographiques peuvent exister à différentes échelles, des plus petites (précision 1 km) aux plus grandes (précision quelques cm). 
+
+
+* Référentiel métier
+
+C'est une donnée thématique construite pour répondre aux besoins des services de la Région.
+Les directions métiers ont la responsabilité de cette information.
+
+
+* Dictionnaire des données
+
+Le dictionnaire de données est utilisé pour standardiser le contenu, le contexte et la définition des données ainsi que pour assurer la cohérence et la réutilisabilité, tout en augmentant la qualité des données dans l'organisation. En définissant les éléments, ils permettent :
+	* une standardisation entre les données
+	* des informations de meilleure qualité
+	* une meilleure compréhension
+	* une intégration facile et une communication optimale entre les systèmes
+	* une liste unique d'entités et d'informations
+	* des informations utilisées comme descriptions
+	* des relations d'entité à entité
+
+
 
 Règles de dénomination des objets de la base de données (hors données issu de producteurs officiels)
 ----
