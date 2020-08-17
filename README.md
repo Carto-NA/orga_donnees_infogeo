@@ -10,13 +10,12 @@ Les objectifs :
 	* Maintenir le bon fonctionnement des bases de données
 	* Distribuer et faciliter l’accessibilité aux données
 
-``` go
-_
-**Audit :**
-	+ Harmoniser les pratiques en matière de chargement et de stockage des données.
-	+ Améliorer et décrire les processus et les méthodes de production d'un lot de données.
-_
-```
+
+>_**Audit :**_
+
+>	_+ Harmoniser les pratiques en matière de chargement et de stockage des données.
+>	+ Améliorer et décrire les processus et les méthodes de production d'un lot de données._
+
 
 Productions nécessaires :
 
