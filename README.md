@@ -30,7 +30,7 @@ Productions nécessaires :
 	[] Schéma d'alimentation des données (admin SIG, cartographe, métier, ...)
 	[] ...
 *******
-</br></br>
+
 
 ***Abandon du serveur de fichiers SHAPE ?***
 
@@ -38,7 +38,7 @@ Si non :
 - Le conserver pour quoi faire ? 
 - Qui le gére ?
 - ...
-</br></br>
+
 
 ## Quelques définitions
 
