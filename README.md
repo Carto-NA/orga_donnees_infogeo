@@ -106,14 +106,22 @@ SIG
 
 ## Organisation de la base de données
 
-- referentiel
+- referentiel (données issues de référentiel ou étant concidéré comme des référentiels par la collectivité)
+	|- r_ign_geofla_region_fr **OU** ign_ref_geofla_region_fr
 
 
-- metier
+- metier (données métiers gérés par la collectivité)
+	|-m_agr_ **OU** m_agriculture_
+	|-m_eco_
+	|-m_env_
+	|-m_tou_
+	
 
-
+ 
 - xapps
 
+
+- xopendata
 
 
 
