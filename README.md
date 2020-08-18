@@ -166,7 +166,7 @@ Le dictionnaire de données est utilisé pour standardiser le contenu, le contex
 	* des informations utilisées comme descriptions
 	* des relations d'entité à entité
 
-
+ >[Dictionnaire de données ...](dictionnaire_donnees.md)
 
 Règles de dénomination des objets de la base de données (hors données issu de producteurs officiels)
 ----
