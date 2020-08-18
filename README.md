@@ -14,6 +14,7 @@ Les objectifs :
 >**_Préconnisations de l'audit :_**
 >	+ *_Harmoniser les pratiques en matière de chargement et de stockage des données._*
 >	+ *_Améliorer et décrire les processus et les méthodes de production d'un lot de données._*
+
 </br>
 
 *******
@@ -31,6 +32,7 @@ Productions nécessaires :
 	[] ...
 *******
 
+</br>
 
 ***Abandon du serveur de fichiers SHAPE ?***
 
@@ -39,6 +41,7 @@ Si non :
 - Qui le gére ?
 - ...
 
+</br>
 
 ## Quelques définitions
 
@@ -62,6 +65,7 @@ Les directions métiers ont la responsabilité de cette information.*
 * **Identifiant non signifiant**
 	*C’est un identifiant qui ne comporte qu’une seule information : celle nécessaire à distinguer l’objet qu’il cible de son environnement.*
 
+</br>
 
  ## Choix du référentiel géographique métier
 
@@ -155,7 +159,7 @@ SIG
 </br></br>
 
 
-* Dictionnaire des données
+### Dictionnaire des données
 
 Le dictionnaire de données est utilisé pour standardiser le contenu, le contexte et la définition des données ainsi que pour assurer la cohérence et la réutilisabilité, tout en augmentant la qualité des données dans l'organisation. En définissant les éléments, ils permettent :
 	* une standardisation entre les données
