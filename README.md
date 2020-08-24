@@ -21,7 +21,7 @@ Les objectifs :
 Productions nécessaires : <br>
 	[x] [Dénomination des champs communs](denomination_champs.md) <br>
 	[x] Phasage d'intégration de données <br>
-	[] [Organisation de la base de données](organisation_bdd.md) <br>
+	[x] [Organisation de la base de données](organisation_bdd.md) <br>
 	[] Ensemble de procédures <br>
 	[x] Modèle de dictionnaire de données <br>
 	[] Calendrier de mise à jour annuel des données <br>
