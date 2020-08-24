@@ -18,18 +18,17 @@ Les objectifs :
 </br>
 
 *******
-Productions nécessaires :
-
-	[x] [Guides des bonnes pratiques pour la bdd](guide_bonnes_pratiques_bdd.md)
-	[x] Phasage d'intégration de données
-	[] Organisation de la base de données
-	[] Ensemble de procédures
-	[x] Modèle de dictionnaire de données
-	[] Calendrier de mise à jour annuel des données
-	[] Catalogue de données
-	[] Liste des référentiels géographiques utilisés auparavant
-	[] Schéma d'alimentation des données (admin SIG, cartographe, métier, ...)
-	[] ...
+Productions nécessaires : <br>
+	[x] [Guides des bonnes pratiques pour la bdd](guide_bonnes_pratiques_bdd.md) <br>
+	[x] Phasage d'intégration de données <br>
+	[] Organisation de la base de données <br>
+	[] Ensemble de procédures <br>
+	[x] Modèle de dictionnaire de données <br>
+	[] Calendrier de mise à jour annuel des données <br>
+	[] Catalogue de données <br>
+	[] Liste des référentiels géographiques utilisés auparavant <br>
+	[] Schéma d'alimentation des données (admin SIG, cartographe, métier, ...) <br>
+	[] ... <br>
 *******
 
 </br>
