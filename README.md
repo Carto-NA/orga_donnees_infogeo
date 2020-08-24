@@ -114,7 +114,7 @@ SIG
 
 ### Règles de dénomination des objets de la base de données (hors données issu de producteurs officiels)
 
-[Organisation de la base de données](organisation_bdd.md)
+[Règles de dénomination des objets](regles_denomination_objets.md)
 
 
 ### Dictionnaire des données
