@@ -19,7 +19,7 @@ Les objectifs :
 
 *******
 Productions nécessaires : <br>
-	[x] [Dénomination des champs communs](denomination_champs.md) <br>
+	[x] [Guide des bonnes pratiques](guide_bonnes_pratiques.md) <br>
 	[x] Phasage d'intégration de données <br>
 	[x] [Organisation de la base de données](organisation_bdd.md) <br>
 	[] Ensemble de procédures <br>
@@ -109,6 +109,7 @@ SIG
 
 ## Organisation de la base de données
 
+[Organisation de la base de données](organisation_bdd.md)
 </br></br>
 
 
