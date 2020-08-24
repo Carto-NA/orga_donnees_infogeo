@@ -110,12 +110,11 @@ SIG
 ## Organisation de la base de données
 
 [Organisation de la base de données](organisation_bdd.md)
-</br></br>
-
 
 
 ### Règles de dénomination des objets de la base de données (hors données issu de producteurs officiels)
 
+[Organisation de la base de données](organisation_bdd.md)
 
 
 ### Dictionnaire des données
