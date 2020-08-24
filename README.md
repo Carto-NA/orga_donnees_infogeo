@@ -19,6 +19,7 @@ Les objectifs :
 
 *******
 Productions nécessaires :
+
 	[x] [Guides des bonnes pratiques pour la bdd](guide_bonnes_pratiques_bdd.md)
 	[x] Phasage d'intégration de données
 	[] Organisation de la base de données
