@@ -6,10 +6,11 @@ Domaines de valeurs - source du référentiel géographique métier
 
 -- ################################################################# Listes de valeurs  ###############################################
 
+-------------------------------------------------------
+-------------------------------------------------------
 -- Table: r_objet.lt_src_geom
 
 -- DROP TABLE r_objet.lt_src_geom;
-
 CREATE TABLE r_objet.lt_src_geom
 (
   code character varying(2) NOT NULL, -- Code de la liste énumérée relative au type de référentiel géométrique
@@ -19,17 +20,19 @@ CREATE TABLE r_objet.lt_src_geom
 WITH (
   OIDS=FALSE
 );
-ALTER TABLE r_objet.lt_src_geom
-  OWNER TO postgres;
+ALTER TABLE r_objet.lt_src_geom OWNER TO postgres;
+
+-- Droits
 GRANT ALL ON TABLE r_objet.lt_src_geom TO postgres;
-COMMENT ON TABLE r_objet.lt_src_geom
-  IS 'Code permettant de décrire le type de référentiel géométrique';
+
+-- Commentaires
+COMMENT ON TABLE r_objet.lt_src_geom IS 'Code permettant de décrire le type de référentiel géométrique';
 COMMENT ON COLUMN r_objet.lt_src_geom.code IS 'Code de la liste énumérée relative au type de référentiel géométrique';
 COMMENT ON COLUMN r_objet.lt_src_geom.valeur IS 'Valeur de la liste énumérée relative au type de référentiel géométrique';
 
-INSERT INTO r_objet.lt_src_geom(
-            code, valeur)
-    VALUES
+-- 
+INSERT INTO r_objet.lt_src_geom(code, valeur)
+VALUES
     ('10', 'Cadastre'),
     ('11', 'PCI vecteur'),
     ('12', 'BD Parcellaire'),
@@ -56,5 +59,42 @@ INSERT INTO r_objet.lt_src_geom(
     ('81', 'Document d''urbanisme'),
     ('82', 'Occupation du Sol'),
     ('83', 'Thèmes BDTopo'),
+    ('99', 'Autre'),
+    ('00', 'Non renseigné');
+
+
+-------------------------------------------------------
+-------------------------------------------------------
+-- Table: r_objet.lt_type_localisation
+
+-- DROP TABLE r_objet.lt_type_localisation;
+CREATE TABLE r_objet.lt_type_localisation
+(
+  code character varying(2) NOT NULL, -- Code de la liste énumérée relative au type de référentiel géométrique
+  valeur character varying(254) NOT NULL, -- Valeur de la liste énumérée relative au type de référentiel géométrique
+  CONSTRAINT lt_src_geom_pkey PRIMARY KEY (code)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE r_objet.lt_type_localisation  OWNER TO postgres;
+
+-- Droits
+GRANT ALL ON TABLE r_objet.lt_type_localisation TO postgres;
+
+-- Commentaires
+COMMENT ON TABLE r_objet.lt_type_localisation  IS 'Code permettant de décrire le type de référentiel géométrique';
+COMMENT ON COLUMN r_objet.lt_type_localisation.code IS 'Code de la liste énumérée relative au type de référentiel géométrique';
+COMMENT ON COLUMN r_objet.lt_type_localisation.valeur IS 'Valeur de la liste énumérée relative au type de référentiel géométrique';
+
+INSERT INTO r_objet.lt_type_localisation(code, valeur)
+VALUES
+    ('10', 'XY'),
+    ('30', 'Commune'),
+    ('40', 'EPCI'),
+    ('50', 'Territoire de contractualisation'), 
+    ('60', 'Département'),
+    ('70', 'Région'),    
+    ('80', 'France'),
     ('99', 'Autre'),
     ('00', 'Non renseigné');
