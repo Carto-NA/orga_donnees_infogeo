@@ -34,5 +34,5 @@ INSERT INTO r_objet.lt_type_localisation(
     ('02', 'XY'),
     ('03', 'EPCI'),
     ('04', 'RPCU'), 
-    ('99', 'Autre'),
+    ('99', 'Autre'), 
     ('00', 'Non renseigné');
