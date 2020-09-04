@@ -1,7 +1,25 @@
 Organisation de la base de données sur l'information "géographique et territoriale"
 ====
 
+Vous devriez pouvoir exécuter simplement select * from information_schema.tables pour obtenir une liste de toutes les tables gérées par Postgres pour une base de données particulière.
+
+Vous pouvez également ajouter un where table_schema = 'information_schema' pour afficher uniquement les tables dans le schéma d'informations.
 Ce document nous permet de définir un certain nombre de règles et bonnes pratiques pour organiser et gérer au mieux la base de données sur l'information *"géographique et territoriale"*.
+
+1.Obtenez toutes les tables et vues de information_schema.tables, y compris celles de information_schema et pg_catalog.
+
+select * from information_schema.tables
+Les tables 2.get et les vues appartiennent à certains schémas
+
+select * from information_schema.tables
+    where table_schema not in ('information_schema', 'pg_catalog')
+3.get tables seulement (presque\dt)
+
+select * from information_schema.tables
+    where table_schema not in ('information_schema', 'pg_catalog') and
+    table_type = 'BASE TABLE'
+    
+    
 
 Les objectifs :
 
