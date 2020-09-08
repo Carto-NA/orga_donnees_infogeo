@@ -39,6 +39,16 @@ ORDER BY table_schema, table_type, table_name;
 SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'z_aire_urbaine_na';
 
 
+-----------------------------------------------------
+-- On peut aussi récupérer le commentaire comme ça :
+
+-- récupère le commentaire d'une colonne de la table [0] --> Commentaire de la table
+select col_description('2402848','0');
+-- 	récupère le commentaire d'un objet de la base de données
+select obj_description('2402848','0');
+-- récupère le commentaire d'un objet partagé de la base de données
+select shobj_description('2402848','0');
+
 
 
 
