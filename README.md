@@ -18,8 +18,29 @@ select * from information_schema.tables
 select * from information_schema.tables
     where table_schema not in ('information_schema', 'pg_catalog') and
     table_type = 'BASE TABLE'
+
+
+
+-- Afficher que les schémas
+SELECT DISTINCT table_schema FROM information_schema.tables WHERE table_type = 'BASE TABLE' AND table_schema NOT IN ('pg_catalog', 'information_schema') ORDER BY table_schema;
     
-    
+-- Afficher les schémas, tables et type de table de la base de données
+select 
+	--table_schema || '.' || table_name, * 
+	table_schema, table_name, table_type
+from information_schema.tables 
+WHERE
+    table_type = 'BASE TABLE'
+AND
+    table_schema NOT IN ('pg_catalog', 'information_schema')
+ORDER BY table_schema, table_type, table_name;
+
+-- Afficher les colonnes d'une tables et le type de champ
+SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'z_aire_urbaine_na';
+
+
+
+
 
 Les objectifs :
 
