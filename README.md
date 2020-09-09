@@ -1,56 +1,6 @@
 Organisation de la base de données sur l'information "géographique et territoriale"
 ====
 
-Vous devriez pouvoir exécuter simplement select * from information_schema.tables pour obtenir une liste de toutes les tables gérées par Postgres pour une base de données particulière.
-
-Vous pouvez également ajouter un where table_schema = 'information_schema' pour afficher uniquement les tables dans le schéma d'informations.
-Ce document nous permet de définir un certain nombre de règles et bonnes pratiques pour organiser et gérer au mieux la base de données sur l'information *"géographique et territoriale"*.
-
-1.Obtenez toutes les tables et vues de information_schema.tables, y compris celles de information_schema et pg_catalog.
-
-select * from information_schema.tables
-Les tables 2.get et les vues appartiennent à certains schémas
-
-select * from information_schema.tables
-    where table_schema not in ('information_schema', 'pg_catalog')
-3.get tables seulement (presque\dt)
-
-select * from information_schema.tables
-    where table_schema not in ('information_schema', 'pg_catalog') and
-    table_type = 'BASE TABLE'
-
-
-
--- Afficher que les schémas
-SELECT DISTINCT table_schema FROM information_schema.tables WHERE table_type = 'BASE TABLE' AND table_schema NOT IN ('pg_catalog', 'information_schema') ORDER BY table_schema;
-    
--- Afficher les schémas, tables et type de table de la base de données
-select 
-	--table_schema || '.' || table_name, * 
-	table_schema, table_name, table_type
-from information_schema.tables 
-WHERE
-    table_type = 'BASE TABLE'
-AND
-    table_schema NOT IN ('pg_catalog', 'information_schema')
-ORDER BY table_schema, table_type, table_name;
-
--- Afficher les colonnes d'une tables et le type de champ
-SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'z_aire_urbaine_na';
-
-
------------------------------------------------------
--- On peut aussi récupérer le commentaire comme ça :
-
--- récupère le commentaire d'une colonne de la table [0] --> Commentaire de la table
-select col_description('2402848','0');
--- 	récupère le commentaire d'un objet de la base de données
-select obj_description('2402848','0');
--- récupère le commentaire d'un objet partagé de la base de données
-select shobj_description('2402848','0');
-
-
-
 
 Les objectifs :
 
@@ -144,8 +94,10 @@ SIT
 SIG
 
 	Nom de la machine : [hostname]
-	Adresse IP : xx.xx.xx.xx
+	Adresse IP : [Voir fichier]
 	Port : 5432
+	User : [voir fichier]
+	Mot de passe : [voir fichier]
 
 
 ***Dans quel cas on utilise la géométrie :***
