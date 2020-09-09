@@ -33,7 +33,7 @@ o Données exploitables à un instant t
 
 Pour la dénomination des tables, les données de références seront préfixées en fonction du producteur et pour les données métiers cela se fera en fonction de la thématique.
 
-#### Référentiel
+##### Référentiel
 
 | Préfixe | Producteur | Description |
 | :--: | :--: | :--: |
@@ -49,17 +49,17 @@ Pour la dénomination des tables, les données de références seront préfixée
 |  |  |  |
 
 
-_*Exemple :*
-- referentiel (données issues de référentiel ou étant concidéré comme des référentiels par la collectivité)
-	|- ign_geofla_region_fr
-	|- ...
-	|- gisco_nuts
-	|- ...
-	|- mnhn_pnr
-	|- ..._
+>_**Exemple :**_<br>
+> _referentiel_<br>
+>    _|- ign_geofla_region_fr_<br>
+>    _|- ..._<br>
+>    _|- gisco_nuts_<br>
+>    _|- ..._<br>
+>    _|- mnhn_pnr_<br>
+>    _|- ..._<br>
 	
 
-#### Métier
+##### Métier
 
 | Préfixe | Thématique | Description |
 | :--: | :--: | :--: |
