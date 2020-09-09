@@ -1,5 +1,13 @@
-### Requêtes utilies pour le fonctionnement
+/* ORGA_DONNEES_INFOGEO V1.0 */
+/* Requêtes utiles au fonctionnement */
+/* orga_donnees_infogeo_8O_fonctionnel.sql */
+/* PostgreSQL/PostGIS */
+/* Conseil régional Nouvelle-Aquitaine - https://cartographie.nouvelle-aquitaine.fr/ */
+/* Auteur : Tony VINCENT */
 
+-----------------------------------------------------------
+-- Requêtes utilies pour le fonctionnement
+-----------------------------------------------------------
 
 -- Requête pour extraire les commentaires sur les schémas
 SELECT 
