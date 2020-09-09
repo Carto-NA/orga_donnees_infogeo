@@ -40,12 +40,14 @@ Pour la dénomination des tables, les données de références seront préfixée
 | ign_ | IGN | Institut national de l'information géographique et forestière |
 | gisco_ | GISCO | Geographic Information System of the COmmission |
 | magr_ |  | Ministère de l'agriculture |
+| insee_ | INSEE |  |
+| brgm_ | BRGM |  |
+| inra_ | INRA |  |
+| menv_ |  | Ministère de l'environnement |
+| mnhn_ | MNHN-INPN | Muséum national d'histoire naturel |
+| cren_ | CREN | Conservatoire régional des espaces naturels |
 |  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+
 
 _*Exemple :*
 - referentiel (données issues de référentiel ou étant concidéré comme des référentiels par la collectivité)
