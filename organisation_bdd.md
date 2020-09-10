@@ -33,7 +33,14 @@ o Données exploitables à un instant t
 
 Pour la dénomination des tables, les données de références seront préfixées en fonction du producteur et les données métiers cela se fera en fonction de la thématique.
 
+>_*Les données du SIT nécessaire aux applications SIG seront dupliquées d'une base à l'autre (base SIT --> base ESRI).*_
+
+
 ##### Référentiel
+
+Les données de références seront stockées dans leurs formes d’origines (nom de colonne, contenu, ...).
+
+<br>
 
 | Préfixe | Acronyme | Producteur | Description |
 | :--: | :--: | :--: | :--: |
@@ -60,6 +67,11 @@ Pour la dénomination des tables, les données de références seront préfixée
 	
 <br><br>
 ##### Métier
+
+<br>
+>_*Pas de règle particulière pour la dénomination des éléments (tables, champs, clé,…), chacun fait comme bon lui semble.*_
+
+<br>
 
 | Préfixe | Thématique | Description |
 | :--: | :--: | :--: |
@@ -92,23 +104,6 @@ Pour la dénomination des tables, les données de références seront préfixée
 >    _|- tou_<br>
 >    _|- ..._<br>
 
-<br>
-- metier (données métiers gérés par la collectivité)
-	|- agr_ 
-	|- eco_
-	|- env_
-	|- ser_
-	|- tou_
-	|- com_
-	|- emp_
-	|- for_
-	|- lyc_
-	|- san_
-	|- urb_
-	|- tra_
-	|- log_
-	|- ele_
-	|- zon_
 
  <br>
 - xapplication (données pré-traitées pour les applications web SIG ou liés à des projets)
