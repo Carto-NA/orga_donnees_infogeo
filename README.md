@@ -158,15 +158,16 @@ Le dictionnaire de données est utilisé pour standardiser le contenu, le contex
 
 | Période | Données |
 | :----: | :---: |
-| Janvier |  |
+| Janvier | - Quartiers prioritaires |
 | Février |  |
-| Mars |  |
+| Mars | - Les CAE  |
 | Avril |  |
 | Mai |  |
 | Juin |  |
 | Juillet |  |
 | Août |  |
-| Septembre | * Tiers-lieux * ... |
+| Septembre | - Tiers-lieux 
+- ... |
 | Octobre |  |
 | Novembre |  |
 | Décembre |  |
@@ -176,6 +177,8 @@ Au fil de l'eau
 | Période | Données | Tables |
 | :----: | :---: | :---: |
 |  | Méthanisation |  |
+|  | Commune pour "Gertrude" | met_pat.m_pat_ |
+|  | DSI "Localisation des sites région" |  |
 
 
 Sur demande de la direction
@@ -186,6 +189,11 @@ Sur demande de la direction
 |  | Spectacle vivant |  |
 |  | Territoire CADET |  |
 |  | Territoire d'élus |  |
+|  | Territoire d'industrie |  |
+|  | Degré de vulnérabilité des EPCI |  |
+|  | Diagnostics 3D |  |
+|  | Démarche d'Engagement et de labélisation RSO |  |
+|  |  |  |
 |  |  |  |
 |  |  |  |
 |  |  |  |
