@@ -57,7 +57,6 @@ Les données de références seront stockées dans leurs formes d’origines (no
 
 
 >_**Exemple :**_<br>
-
 > _referentiel_<br>
 >    _|- ign_geofla_region_fr_<br>
 >    _|- ..._<br>
@@ -67,6 +66,7 @@ Les données de références seront stockées dans leurs formes d’origines (no
 >    _|- ..._<br>
 	
 <br><br>
+
 ##### Métier
 
 <br>
@@ -98,7 +98,6 @@ Les données de références seront stockées dans leurs formes d’origines (no
 
 
 >_**Exemple :**_<br>
-
 > _metier_<br>
 >    _|- agr_<br>
 >    _|- eco_<br>
@@ -113,7 +112,7 @@ Les données de références seront stockées dans leurs formes d’origines (no
  Données pré-traitées pour les applications web SIG ou liés à des projets
  <br>
  
- >_**Exemple :**_<br>
+>_**Exemple :**_<br>
 > _xapplication_<br>
 >    _|- xapp_portail_tiers_lieu<br>
 >    _|- ..._<br>
