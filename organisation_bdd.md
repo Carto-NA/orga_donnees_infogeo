@@ -26,7 +26,7 @@ Mais nous sommes d'accord que cela ne peut pas être géré au niveau de la DITP
 o Délai de mise en œuvre trop court pour une intégration en base de données
 o Données exploitables à un instant t
 
-==> **Pour l'instant, la réponse  qui peut être apporté, c'est l'utilisation du Data Store (personnel).**
+==> **Pour l'instant, la réponse  qui peut être apportée, c'est l'utilisation du Data Store (personnel).**
 
 <br><br>
 ### Table
