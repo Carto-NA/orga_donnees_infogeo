@@ -35,18 +35,18 @@ Pour la dénomination des tables, les données de références seront préfixée
 
 ##### Référentiel
 
-| Préfixe | Producteur | Description |
-| :--: | :--: | :--: |
-| ign_ | IGN | Institut national de l'information géographique et forestière |
-| gisco_ | GISCO | Geographic Information System of the COmmission |
-| magr_ |  | Ministère de l'agriculture |
-| insee_ | INSEE |  |
-| brgm_ | BRGM |  |
-| inra_ | INRA |  |
-| menv_ |  | Ministère de l'environnement |
-| mnhn_ | MNHN-INPN | Muséum national d'histoire naturel |
-| cren_ | CREN | Conservatoire régional des espaces naturels |
-|  |  |  |
+| Préfixe | Acronyme | Producteur | Description |
+| :--: | :--: | :--: | :--: |
+| ign_ | IGN | Institut national de l'information géographique et forestière | L’Institut national de l'information géographique et forestière est un établissement public à caractère administratif ayant pour mission d'assurer la production, l'entretien et la diffusion de l'information géographique de référence en France. |
+| gisco_ | GISCO | Geographic Information System of the COmmission | GISCO est chargé de répondre aux besoins d'information géographique de la Commission européenne à 3 niveaux: l'Union européenne, ses pays membres et ses régions. |
+| magr_ |  | Ministère de l'agriculture | Le ministère de l’Agriculture et de l'Alimentation est l’administration chargée de la politique agricole, halieutique, alimentaire et forestière.  |
+| insee_ | INSEE | Institut national de la statistique et des études économiques | L’Institut national de la statistique et des études économiques est chargé de la production, de l'analyse et de la publication des statistiques officielles en France : comptabilité nationale annuelle et trimestrielle, évaluation de la démographie nationale, du taux de chômage, etc.  |
+| brgm_ | BRGM | Bureau de Recherches Géologiques et Minières | Le BRGM est l'organisme public français de référence dans le domaine des sciences de la Terre pour la gestion des ressources naturelles et des risques du sol et du sous-sol. C'est le service géologique national français |
+| inra_ | INRA | Institut national de la recherche agronomique | L'Institut national de la recherche agronomique (INRA) était un organisme français de recherche en agronomie existant de 1946 à 2019. L'institut fusionne le 1er janvier 2020 avec l'IRSTEA pour former l'Institut national de recherche pour l'agriculture, l'alimentation et l'environnement (INRAE). |
+| menv_ |  | Ministère de l'environnement |  |
+| mnhn_ | MNHN | Muséum national d'histoire naturel | Le Muséum national d'histoire naturelle est un établissement français d'enseignement, de recherche et de diffusion de la culture scientifique naturaliste. |
+| cren_ | CREN | Conservatoire régional des espaces naturels |  |
+|  |  |  |  |
 
 
 >_**Exemple :**_<br>
