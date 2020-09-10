@@ -105,8 +105,19 @@ SIG
 	*Et quoniam apud eos ut in capite mundi morborum acerbitates celsius dominantur, ad quos vel sedandos omnis professio medendi torpescit, excogitatum est adminiculum sospitale nequi amicum perferentem similia videat, additumque est cautionibus paucis remedium aliud satis validum, ut famulos percontatum missos quem ad modum valeant noti hac aegritudine colligati, non ante recipiant domum quam lavacro purgaverint corpus. ita etiam alienis oculis visa metuitur labes.*
 
 - PostGIS <br>
-	*Et quoniam apud eos ut in capite mundi morborum acerbitates celsius dominantur, ad quos vel sedandos omnis professio medendi torpescit, excogitatum est adminiculum sospitale nequi amicum perferentem similia videat, additumque est cautionibus paucis remedium aliud satis validum, ut famulos percontatum missos quem ad modum valeant noti hac aegritudine colligati, non ante recipiant domum quam lavacro purgaverint corpus. ita etiam alienis oculis visa metuitur labes.*
+	* Utilisateurs de QGIS
+	* Besoins spécifiques (client SIG, application métier, autres) ne pouvant se connecter ou utiliser les services ESRI.
+	* …
 
+<br>
+
+## Méthode de travail
+
+1.	On travaille d'abord en pré-prod pour tester/valider les changements 
+2.	On complète les documents, si besoin.
+3.	On rejoue la procédure en production.
+
+<br>
 
 ## Organisation de la base de données
 
