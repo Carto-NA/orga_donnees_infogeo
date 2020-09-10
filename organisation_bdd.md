@@ -106,9 +106,15 @@ Les données de références seront stockées dans leurs formes d’origines (no
 
 
  <br>
-- xapplication (données pré-traitées pour les applications web SIG ou liés à des projets)
-	|-xapp_portail_tiers_lieu
-	|-
+ **En attente de validation**
+ Données pré-traitées pour les applications web SIG ou liés à des projets
+ <br>
+ 
+ >_**Exemple :**_<br>
+> _xapplication_<br>
+>    _|- xapp_portail_tiers_lieu<br>
+>    _|- ..._<br>
+
 
 
 
