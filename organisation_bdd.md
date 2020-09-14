@@ -5,6 +5,14 @@ Les données seront stockées dans deux schémas, un pour les référentiels _[r
 
 Voici la proposition de l'organisation de la base (celle-ci pourra être amené à changer en fonction des tests et remontés des utilisateurs) :
 
+### Compte utilisateur 
+
+sde
+referentiel
+metier
+user_data
+
+
 ### Schéma
 
 | Schéma | Description |
