@@ -89,7 +89,9 @@ COMMENT ON COLUMN r_objet.lt_type_localisation.valeur IS 'Valeur de la liste én
 
 INSERT INTO r_objet.lt_type_localisation(code, valeur)
 VALUES
-    ('10', 'XY'),
+    ('10', 'Numéro "à la plaque"'),
+    ('11', 'Rue'),
+    ('20', 'Lieu-dit'),
     ('30', 'Commune'),
     ('40', 'EPCI'),
     ('50', 'Territoire de contractualisation'), 
