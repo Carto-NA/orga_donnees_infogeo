@@ -136,6 +136,8 @@ Pour la dénomination des tables, les données de références seront préfixée
 
 Les données de références seront stockées dans leurs formes d’origines (nom de colonne, contenu, ...).
 
+Avec à l'intérieur des jeux de classe d'entité pour ranger le données par fournisseur.
+
 <br>
 
 | Préfixe | Acronyme | Producteur | Description |
