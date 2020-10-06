@@ -1,19 +1,104 @@
 ## Organisation de la base de données
 
 <br><br>
-Les données seront stockées dans deux schémas, un pour les référentiels _[referentiel]_ et un deuxième pour les données métiers _[metier]_. Les autres schémas sont utilisés par postgre pour contenir des informations.
+Les données seront stockées dans plusieurs schémas, un pour les référentiels _[referentiel]_ et plusieurs pour les données métiers qui seront organisés par thématique _[agriculture]_, _[environnement]_, _[culture]_, _[...]_. Les autres schémas sont utilisés par postgre pour contenir des informations.
 
 Voici la proposition de l'organisation de la base (celle-ci pourra être amené à changer en fonction des tests et remontés des utilisateurs) :
 
-### Compte utilisateur 
 
+### Rôle
 
-| Compte utilisateur | Description |
+| Rôle | Description | 
 | :--: | :--: |
 | sde |  |
 | referentiel |  |
 | metier |  |
-| user2 |  |
+| agriculture_ro |  |
+| culture_ro |  |
+| economie_ro |  |
+| environnement_ro |  |
+| viewer_ro |  |
+| editor_ro |  |
+| publisher_ro |  |
+| viewer_all_schema_ro | Rôle permettant de regrouper les utilisateurs qui ont le droit de lecture sur tout les schémas  |
+| culture_schema_ro | Rôle permettant de regrouper les utilisateurs qui ont le droit de lecture sur le schéma "culture" |
+| agriculture_schema_ro | Rôle permettant de regrouper les utilisateurs qui ont le droit de lecture sur le schéma "agriculture" |
+| environnement_schema_ro | Rôle permettant de regrouper les utilisateurs qui ont le droit de lecture sur le schéma "environnement" |
+| environnement_schema_ro | Rôle permettant de regrouper les utilisateurs qui ont le droit de lecture sur le schéma "environnement" |
+
+
+### Compte utilisateur 
+
+| Compte utilisateur | Description | appartient à |
+| :--: | :--: | :--: |
+| sde |  |  |
+| referentiel |  |  |
+| metier |  |  |
+| user1 |  | editor_ro |
+| user2 |  | editor_ro |
+| user3 |  | editor_ro, publisher_ro |
+| user4 |  |  |
+| user5 |  |  |
+| vincentto |  |  |
+| capellie |  |  |
+| c-lidier |  |  |
+| chollonjj |  |  |
+| v-janvier |  |  |
+
+
+donner l’accès en lecture à un utilisateur, sur l’ensemble des objets d’une base de données (schémas, tables, vues, séquences…)
+
+Il faut donc procéder en plusieurs étapes.
+
+autoriser le user sur le schéma.
+ma_base=# GRANT USAGE ON SCHEMA mon_schema TO mon_user_read_only ;
+
+
+Connecté en tant que user postgres, autoriser le user en lecture sur toutes les tables, vues et séquences existantes du schéma :
+ma_base=# GRANT SELECT ON ALL TABLES IN SCHEMA mon_schema TO mon_user_read_only ;
+ma_base=# GRANT SELECT ON ALL SEQUENCES IN SCHEMA mon_schema TO mon_user_read_only ;
+
+ 
+Connecté en tant que user postgres, autoriser le user en lecture sur toutes les futures tables, vues et séquences qui seront créées dans le schéma par le user postgres :
+ma_base=# ALTER DEFAULT PRIVILEGES IN SCHEMA mon_schema GRANT SELECT ON TABLES TO mon_user_read_only ;
+ma_base=# ALTER DEFAULT PRIVILEGES IN SCHEMA mon_schema GRANT SELECT ON SEQUENCES TO mon_user_read_only ;
+
+
+### Droits attribués
+
+Les commandes doivent être tapées en étant connecté dans la base de données.
+
+#### En lecture
+
+grant usage on schema referentiel to viewer_ro;
+grant select on all tables in schema reerentiel to viewer_ro;
+grant execute on all functions in schema public to viewer_ro;
+
+#### En écriture
+
+grant usage on schema public to group base_rw;
+grant select, insert, update, delete on all tables in schema public to group editor_ro;
+grant all on all functions in schema public to group editor_ro;
+grant all on all sequences in schema public to group editor_ro;
+
+
+#### Définir les droits par défaut
+
+*Ne s'applique que pour les objets créés par la suite dans la base*
+
+Connecté en tant que referentiel :
+
+alter default privileges in schema referentiel grant select on tables to group viewer_all_schema_ro;
+alter default privileges in schema referentiel grant execute on  functions to group viewer_all_schema_ro;
+ 
+
+=====
+
+grant usage on schema referentiel to viewer_ro;
+grant select on all tables in schema referentiel to viewer_ro;
+--grant execute on all functions in schema public to viewer_ro;
+alter default privileges in schema referentiel grant select on tables to viewer_all_schema_ro;
+--alter default privileges in schema referentiel grant execute on  functions to viewer_all_schema_ro;
 
 
 ### Schéma
