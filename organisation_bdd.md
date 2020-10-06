@@ -13,7 +13,7 @@ Voici la proposition de l'organisation de la base (celle-ci pourra être amené 
 | sde |  |
 | referentiel |  |
 | metier |  |
-| agriculture_ro |  |
+| agriculture_ro | Rôle pour le schéma "agr" |
 | culture_ro |  |
 | economie_ro |  |
 | environnement_ro |  |
@@ -33,12 +33,17 @@ Voici la proposition de l'organisation de la base (celle-ci pourra être amené 
 | :--: | :--: | :--: |
 | sde |  |  |
 | referentiel |  |  |
-| metier |  |  |
+| metier | _A supprimer_  |  |
+| agr | Utilisateur pour le schéma "agr" | view_all_schema_ro, agriculture_ro |
+| eco | Utilisateur ayant les droits de lecture sur le schéma "eco" | view_all_schema_ro, economie_ro |
+| env | Utilisateur ayant les droits de lecture sur  le schéma "env" | view_all_schema_ro, environnement_ro |
+| cul | Utilisateur ayant les droits de lecture sur  le schéma "cul" | view_all_schema_ro, culture_ro |
 | user1 |  | editor_ro |
 | user2 |  | editor_ro |
 | user3 |  | editor_ro, publisher_ro |
 | user4 |  |  |
 | user5 |  |  |
+| cartographe | Compte utilisé par les cartographes | view_all_schema_ro |
 | vincentto |  |  |
 | capellie |  |  |
 | c-lidier |  |  |
@@ -94,9 +99,9 @@ alter default privileges in schema referentiel grant execute on  functions to gr
 
 =====
 
-grant usage on schema referentiel to viewer_ro;
-grant select on all tables in schema referentiel to viewer_ro;
---grant execute on all functions in schema public to viewer_ro;
+grant usage on schema referentiel to viewer_all_schema_ro;
+grant select on all tables in schema referentiel to viewer_all_schema_ro;
+--grant execute on all functions in schema public to viewer_all_schema_ro;
 alter default privileges in schema referentiel grant select on tables to viewer_all_schema_ro;
 --alter default privileges in schema referentiel grant execute on  functions to viewer_all_schema_ro;
 
@@ -134,9 +139,7 @@ Pour la dénomination des tables, les données de références seront préfixée
 
 ##### Référentiel
 
-Les données de références seront stockées dans leurs formes d’origines (nom de colonne, contenu, ...).
-
-Avec à l'intérieur des jeux de classe d'entité pour ranger le données par fournisseur.
+Les données de références seront stockées dans leurs formes d’origines (nom de colonne, contenu, ...). Avec à l'intérieur des jeux de classe d'entité pour ranger le données par fournisseur (IGN, BRGE, Sandre, ...) .
 
 <br>
 
@@ -156,12 +159,17 @@ Avec à l'intérieur des jeux de classe d'entité pour ranger le données par fo
 
 >_**Exemple :**_<br>
 > _referentiel_<br>
->    _|- ign_geofla_region_fr_<br>
->    _|- ..._<br>
->    _|- gisco_nuts_<br>
->    _|- ..._<br>
->    _|- mnhn_pnr_<br>
->    _|- ..._<br>
+>   _|ign
+>>    _|- ign_ade_region_fr_<br>
+>>    _|- ign_ade_departement_fr_<br>
+>>    _|- ign_geofla_region_fr_<br>
+>>    _|- ..._<br>
+>   _|gisco
+>>    _|- gisco_nuts_<br>
+>>    _|- ..._<br>
+>   _|mnhn
+>>    _|- mnhn_pnr_<br>
+>>    _|- ..._<br>
 	
 <br><br>
 
