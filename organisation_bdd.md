@@ -94,16 +94,22 @@ grant all on all sequences in schema public to group editor_ro;
 Connecté en tant que referentiel :
 
 alter default privileges in schema referentiel grant select on tables to group viewer_all_schema_ro;
+
 alter default privileges in schema referentiel grant execute on  functions to group viewer_all_schema_ro;
  
 
 =====
 
 grant usage on schema referentiel to viewer_all_schema_ro;
+
 grant select on all tables in schema referentiel to viewer_all_schema_ro;
+
 --grant execute on all functions in schema public to viewer_all_schema_ro;
+
 alter default privileges in schema referentiel grant select on tables to viewer_all_schema_ro;
+
 --alter default privileges in schema referentiel grant execute on  functions to viewer_all_schema_ro;
+
 
 
 ### Schéma
