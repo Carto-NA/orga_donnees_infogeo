@@ -18,7 +18,7 @@ Les objectifs :
 28/01/2022
 --> Suppression du territoire CADET - Oloron Haut Béarn
 
->A faire en pre-production et ensuite en production
+	**_A faire en pre-production et ensuite en production_**
 
 Table concernée :
 * Schéma "referentiel"
