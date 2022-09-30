@@ -1,0 +1,323 @@
+#!/usr/bin/env python3
+
+################################################################################
+# 
+# Thémathique : Générique     
+# 
+# Propriétaire : Conseil régional Nouvelle-Aquitaine - http://cartes.nouvelle-aquitaine.pro/
+# Auteur : Tony VINCENT <tony.vincent@nouvelle-aquitaine.fr>
+#
+# Script python pour Jupyter Notebook
+################################################################################
+
+# Gestion des listes de domaines
+
+00 - Environnement de travail et variables
+
+01 - [Générique](### 01- Générique)
+    * Liste "géometrie pertinence"
+    * Liste "type de géométrie"
+    
+02 - Gestion des privilèges
+
+03 - Gestion des données
+    1. Import en masse
+    2. Actualisation partielle
+
+## 00 - Environnement de travail et variables
+
+### On déclare les libairies
+
+# Import des librairies
+import arcpy, datetime, os, pandas as pd
+from arcpy import env
+
+# On demande de saisir l'environnement de travail (prod ou preprod)
+environnement_travail = input("Saisir l'environnement de travail (prod ou preprod): ")
+
+# On test et on déclare la variable
+if environnement_travail == "preprod":
+    conn = "conn_preprod/preprod_metier.sde"
+elif environnement_travail == "prod":
+    conn = "conn_prod/prod_metier.sde"
+    
+# Dossier du projet
+projet = r"Modele_AdminDonnees/"
+
+# Espace de travail
+arcpy.env.workspace = r"i:/ArcGIS/Projects/" + projet + conn
+
+### 01- Générique
+[Haut de page](# Gestion des listes de domaines)
+
+##########################################
+#### Liste "géométrie pertinence"
+
+# Set local parameters
+domName = "lt_geometrie_pertinence"
+domDesc = "Liste des pertinences de la géométrie"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, 
+                              "TEXT", "CODED")
+                              
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"Autres":"Autres", "France": "France", "Région": "Région", "": "", "": "", "": ""}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+
+##########################################
+#### Liste "type de géométrie"
+
+# Set local parameters
+domName = "lt_type_geometrie"
+domDesc = "Liste des types de géométrie"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, 
+                              "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"":"", "": "", "": "", "": "", "": "", "": ""}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+   
+##########################################    
+#### Liste "Oui/Non"
+
+# Set local parameters
+domName = "lt_oui_non"
+domDesc = "Liste Oui/Non"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, 
+                              "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"oui":"Oui", "non": "Non"}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+    
+##########################################
+#### Liste de "civilité" d'une personne
+
+# Set local parameters
+domName = "lt_civilite"
+domDesc = "Liste des civilités des personnes"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, 
+                              "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"M":"Monsieur", "Mme": "Madame"}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+
+##########################################
+#### Liste de "genre" d'une personne
+
+# Set local parameters
+domName = "lt_genre"
+domDesc = "Liste des genres des personnes"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, 
+                              "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"H":"Homme", "F": "Femme"}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+
+##########################################
+#### Liste "secteur économique"
+
+# Set local parameters
+domName = "lt_secteur_eco"
+domDesc = "Liste des secteurs économiques (privé, public)"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, 
+                              "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"Privé":"Privé", "Public": "Public"}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+    
+### Environnement
+
+#### Résponsabilité Sociétale des Organisation (RSO)
+
+##########################################
+#### Liste "label"
+
+# Set local parameters
+domName = "lt_env_rso_label"
+domDesc = "Liste des labels"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"Engagé RSE":"Engagé RSE ", "Engagé RSO": "Engagé RSO", "Lucie": "Lucie"}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+
+#### PCAET
+
+##########################################
+##### Liste "statut"
+
+# Set local parameters
+domName = "lt_env_pcaet_statut"
+domDesc = "Liste des statuts"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"Obligé":"Obligé", "Volontaire": "Volontaire"}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+    
+#---------------------------------------------------------------#
+## Process: Supprimer une valeur d'un domaine de valeurs précodées
+codedValue =  "Volontaire: Volontaire"
+arcpy.DeleteCodedValueFromDomain_management(arcpy.env.workspace, domName, codedValue)
+
+## Process: Supprimer une valeur d'un domaine de valeurs précodées
+codedValue =  "Obligé: Obligé"
+arcpy.DeleteCodedValueFromDomain_management(arcpy.env.workspace, domName, codedValue)
+#---------------------------------------------------------------#
+
+##########################################
+##### Liste "étape"
+
+# Set local parameters
+domName = "lt_env_pcaet_etape"
+domDesc = "Liste des étapes"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"0 pas démarré / abandon":"0 pas démarré / abandon",
+           "1 délibération": "1 délibération",
+          "2 diagnostic réalisé":"2 diagnostic réalisé",
+          "3 stratégie réalisée":"3 stratégie réalisée",
+          "4 plan d'action":"4 plan d'action",
+          "5 consultation / approbation":"5 consultation / approbation"}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+ 
+ 
+#### PTRE
+
+##########################################
+##### Liste "type de structure"
+
+# Set local parameters
+domName = "lt_env_ptre_type"
+domDesc = "Liste des types de structure"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"Plateforme":"Plateforme",
+          "Plateforme en devenir":"Plateforme en devenir"}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+  
+  
+### Lycée
+
+##########################################
+##### Liste "Secteur de l'établissement"
+
+# Set local parameters
+domName = "lt_lyc_etab_secteur"
+domDesc = "Liste des secteurs d'établissement"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"Privé":"Privé", "Public": "Public"}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+    
+##########################################
+##### Liste "Enseignement de l'établissement"
+
+# Set local parameters
+domName = "lt_lyc_etab_enseignement"
+domDesc = "Liste des enseignements au sein de l'établissement"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, 
+                              "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"NR": "Non renseigné",
+           "Général et technologique": "Général et technologique", 
+           "Polyvalent": "Polyvalent", 
+           "Professionnel": "Professionnel"}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+
+
+
+
+
+##########################################
