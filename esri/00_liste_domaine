@@ -217,4 +217,41 @@ domDict = {"0 pas démarré / abandon":"0 pas démarré / abandon",
 for code in domDict:        
     arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
     
+#### PTRE
+
+##### Liste "type de structure"
+
+# Set local parameters
+domName = "lt_env_ptre_type"
+domDesc = "Liste des types de structure"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"Plateforme":"Plateforme",
+          "Plateforme en devenir":"Plateforme en devenir"}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+    
+### Lycée
+
+##### Liste "Secteur de l'établissement"
+
+# Set local parameters
+domName = "lt_lyc_etab_secteur"
+domDesc = "Liste des secteurs d'établissement"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"Privé":"Privé", "Public": "Public"}
+
+
 
