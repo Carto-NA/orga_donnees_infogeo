@@ -63,7 +63,7 @@ arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc,
 
 # Store all the domain values in a dictionary with the domain code as the "key" 
 # and the domain description as the "value" (domDict[code])
-domDict = {"":"", "": "", "": "", "": "", "": "", "": ""}
+domDict = {"Géocodage":"Géocodage", "Application métier": "Application métier", "GPS": "GPS", "": "", "": "", "": ""}
 
 # Process: Add valid material types to the domain
 # use a for loop to cycle through all the domain codes in the dictionary
