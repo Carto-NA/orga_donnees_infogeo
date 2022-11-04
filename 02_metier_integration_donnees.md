@@ -12,15 +12,20 @@ Process d’intégration
   
 * Objectif :
   * Avoir une vision claire et commune des étapes nécessaire pour l'intégration
-	* Définir des process d'intégration de donnée
+  * Définir des process d'intégration de donnée
 
 
 Définition :
+==
+Opérations qui consistent à charger des informations dans une base de données.
 
-	* Organiser et structurer les données de référence et métier en lien avec l’information géographique
-	* Gérer et maintenir les données de référence
-	* Maintenir le bon fonctionnement des bases de données
-	* Distribuer et faciliter l’accessibilité aux données
+L’intégration de données regroupe généralement plusieurs opérations : contrôle de la source, adaptation du modèle de données et conversion de format. La procédure d’intégration dépend essentiellement de la fréquence de mise à jour de la donnée.
+L’exécution peut être réalisée de manière :
+* Unique, si la source n’est utilisée qu’une fois (par exemple lors de la migration d’un SGBD vers un autre).
+* Continue dans le cas de données provenant en permanence de capteurs IOT
+* Planifiée pour synchroniser deux systèmes à intervalle régulier
+* A la demande, lorsque le producteur de données décide lui-même d’envoyer les informations dont il dispose dans le système d’information.
+
 </br>
 
 >**_Préconnisations de l'audit :_**
