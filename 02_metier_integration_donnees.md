@@ -62,38 +62,73 @@ Et plusieurs origines :
 + partenaire, administration publique.
 	
 **Il est important que les sources de données disponibles soient fiables et correctement structurées pour que les données importées (et utilisées par la suite sous forme d'information ou de connaissance) soient de la meilleure qualité possible.**
-
+</br></br>
 
 **_2. Préparation des données_**
 
 Après la collecte des données suit la préparation des données. La préparation des données, parfois appelée « pré-traitement », est l’étape pendant laquelle les données brutes sont nettoyées et structurées en vue de l'étape suivante du traitement des données. Pendant cette phase de préparation, les données brutes sont vérifiées avec soin afin de déceler d'éventuelles erreurs. L'objectif est d'éliminer les données de mauvaise qualité (redondantes, incomplètes ou incorrectes) et de commencer à créer les données de haute qualité qui peuvent garantir la qualité de votre environnement de Business Intelligence.
-
+</br></br>
 
 **_3. Traitement des données_**
 
 Pendant cette étape, les données importées dans le système lors de l'étape précédente sont traitées pour interprétation. Le traitement s'effectue par exécution d'algorithmes de machine learning. Le traitement s'effectue par exécution d'algorithmes de machine learning. Toutefois, le processus peut varier légèrement selon la source des données (data lakes, réseaux sociaux, équipements connectés, etc.) et l’emploi prévu de ces données (analyse de modèles publicitaires, diagnostic médical à partir d'équipements connectés, détermination des besoins des clients, etc.).
-
+</br></br>
 
 **_4.	Importation des données_**
 
 Les données propres sont ensuite importées dans leur emplacement de destination (par exemple, un système CRM tel que Salesforce ou un data warehouse tel que Redshift), et converties vers un format supporté par cette destination. L'importation des données est la première étape au cours de laquelle les données brutes commencent à se transformer en information exploitable.
-
+</br></br>
 
 **_5.	Stockage des données_**
 
 La dernière étape du traitement des données est le stockage. Une fois les données traitées, elles sont stockées pour une utilisation ultérieure (certaines données sont susceptibles d’être utilisées immédiatement). De plus, les données doivent être stockées correctement afin de répondre aux exigences réglementaires en matière de protection des données telles que le RGPD. Cela permet également aux employés d’y accéder facilement et rapidement, si besoin.
+</br></br>
 
-
-6.	Sortie et interprétation des données
+**_6. Sortie et interprétation des données_**
 
 Lors de l'étape de sortie/interprétation, les données deviennent exploitables par tous les employés, y compris ceux qui n'ont pas les compétences d'un data scientist. Elles sont converties, deviennent lisibles et sont généralement présentées sous forme de graphiques, vidéos, photos, texte brut, etc. Les employés disposent alors d'un accès en libre-service aux données nécessaires à leurs projets d'analytique.
+</br></br>
+
+
+Proposition
+===
+
+**_Proposition 1_**
+
+Les étapes 1, 2 et 3 sont faites par le responsable du projet.
+Les étapes 4 et 5 sont faites par les gestionnaires de la base de données
+
+Plus :
+Délai d’intégration et de mise à disposition plus court
+
+Moins :
+
+
+
+**_Proposition 2_**
+
+Toutes les étapes sont faites par les gestionnaires de la base de données
+
+Plus :
+Cohérence du contenu (liste de domaine, formatage des champs, gestion des doublons, …)
+Interopérabilité avec les autres données
+Modélisation
+
+Moins :
+Délai d’intégration et de mise à disposition plus long
 
 
 
 
->**_Préconnisations de l'audit :_**
->	+ *_Harmoniser les pratiques en matière de chargement et de stockage des données._*
->	+ *_Améliorer et décrire les processus et les méthodes de production d'un lot de données._*
+
+Données (Données internes, externes, open data, …)
+Modélisation
+Conception
+Optimisation
+Diffusion
+
+Droits d’accès/d’utilisation
+
 
 </br>
 
