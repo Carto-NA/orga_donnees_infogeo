@@ -1,7 +1,7 @@
-| LOGO NA | Intégration des données métiers | Données |
+#Intégration des données métiers
 
-Process d’intégration
-=
+##*Process d’intégration*
+
 
 * Statut
   - [ ] à rédiger
@@ -15,8 +15,8 @@ Process d’intégration
   * Définir des process d'intégration de donnée
 
 
-Définition :
-==
+###Définition :
+
 Opérations qui consistent à charger des informations dans une base de données.
 
 L’intégration de données regroupe généralement plusieurs opérations : contrôle de la source, adaptation du modèle de données et conversion de format. La procédure d’intégration dépend essentiellement de la fréquence de mise à jour de la donnée.
@@ -27,6 +27,18 @@ L’exécution peut être réalisée de manière :
 * A la demande, lorsque le producteur de données décide lui-même d’envoyer les informations dont il dispose dans le système d’information.
 
 </br>
+###Etapes clés d’intégration des données
+
+1. Explorer et évaluer la source
+
+2. Définir et concevoir l’intégration
+
+3. Effectuer des tests avec des données réelles
+
+4. Validation des données et services
+
+</br>
+
 
 >**_Préconnisations de l'audit :_**
 >	+ *_Harmoniser les pratiques en matière de chargement et de stockage des données._*
