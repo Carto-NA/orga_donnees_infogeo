@@ -1,6 +1,6 @@
-# Règles et bonnes partaiques
+# Règles et bonnes partiques
 
->   Ce document s'adresse aux référents géographique ou aux responsables des projets au sein de la DITP.
+>   Ce document s'adresse aux référents géographique, thématiciens ou aux responsables des projets au sein de la DITP.
 
 ### Règles de dénomination des objets de la base de données
 
