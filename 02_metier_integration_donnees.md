@@ -28,6 +28,15 @@ L’exécution peut être réalisée de manière :
 * A la demande, lorsque le producteur de données décide lui-même d’envoyer les informations dont il dispose dans le système d’information.
 
 
+But
+===
+
+L’intégration de données va permettre d’homogénéiser les données et ainsi de faire « parler » les données entre elles. Cela permettra, par la suite, de répondre aux interrogations des décideurs et thématiciens grâce à des représentations et analyses plus poussées (cartographies, tableaux de bords, analyses spatiales, études …). 
+
+Cycle du traitement de l’information.
+[schéma traitement de l'information]
+
+
 Etapes clés d’intégration des données
 ===
 
@@ -43,7 +52,7 @@ Etapes clés d’intégration des données
 Workflow du traitement des données
 ===
 
-[Schéma]
+[Schéma du workflow du traitement des données]
 
 
 **_1. Réception/Collecte des données_**
@@ -64,9 +73,33 @@ Et plusieurs origines :
 **Il est important que les sources de données disponibles soient fiables et correctement structurées pour que les données importées (et utilisées par la suite sous forme d'information ou de connaissance) soient de la meilleure qualité possible.**
 </br></br>
 
-**_2. Préparation des données_**
+**_2. Contrôle / préparation des données_**
 
-Après la collecte des données suit la préparation des données. La préparation des données, parfois appelée « pré-traitement », est l’étape pendant laquelle les données brutes sont nettoyées et structurées en vue de l'étape suivante du traitement des données. Pendant cette phase de préparation, les données brutes sont vérifiées avec soin afin de déceler d'éventuelles erreurs. L'objectif est d'éliminer les données de mauvaise qualité (redondantes, incomplètes ou incorrectes) et de commencer à créer les données de haute qualité qui peuvent garantir la qualité de votre environnement de Business Intelligence.
+Après la collecte des données suit la préparation de celles-ci. La préparation des données est l’étape pendant laquelle les données brutes sont nettoyées et structurées en vue de l'étape suivante du traitement des données. Pendant cette phase de préparation, les données brutes sont vérifiées avec soin afin de déceler d'éventuelles erreurs.
+
+Pour permettre une consolidation de données, on doit retravailler les données sources pour pouvoir analyser l'ensemble et avoir une correspondance.
+On peut citer, pour une consolidation de données :
++ Codes INSEE 
+++	5 caractères
+++	champ au format texte
+
++ Civilité
+++	Mr pour Monsieur
+++	Mme pour Madame
+
++ Oui/Non à la place de 0/1 ou o/n
+
++ Découpage des champs
+NOM Prénom dans deux champs (NOM et Prénom)
+
++ Conversion des dates
+01/01/20017 à la place de 01 janv 2017
+
+Il est aussi import de vérifier la dénomination et le typage des champs pour que l’importation des données puisse se faire correctement.
+
+
+**L'objectif est d'éliminer les données de mauvaise qualité (redondantes, incomplètes ou incorrectes) et de commencer à créer les données de bonne qualité pour garantir la qualité des résultats.**
+
 </br></br>
 
 **_3. Traitement des données_**
