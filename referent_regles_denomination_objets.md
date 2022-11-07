@@ -1,3 +1,7 @@
+# Règles et bonnes partaiques
+
+>   Ce document s'adresse aux référents géographique ou aux responsables des projets au sein de la DITP.
+
 ### Règles de dénomination des objets de la base de données
 
 1. Les noms de schéma, table, champ, vue, ... doivent être écrit en minuscule pour éviter l’utilisation des guillemets "[nom_table]" dans les requêtes sql.
