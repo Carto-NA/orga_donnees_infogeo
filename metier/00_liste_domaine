@@ -169,7 +169,40 @@ domDict = {"Privé":"Privé", "Public": "Public"}
 # use a for loop to cycle through all the domain codes in the dictionary
 for code in domDict:        
     arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
-    
+
+### Economie
+
+#### GAL Leader
+
+##########################################
+#### Liste "type de structure porteuse"
+
+# Set local parameters
+domName = "lt_eco_gal_leader_type_sp"
+domDesc = "GAL Leader : Liste des types de structure porteuse"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, 
+                              "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {
+    "Association": "Association", 
+    "EPCI":"EPCI", "Syndicat mixte" : 
+    "Syndicat mixte", 
+    "Pays": "Pays", 
+    "PETR": "PETR", 
+    "PNR": "PNR"
+}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+  
+   
+   
 ### Environnement
 
 #### Résponsabilité Sociétale des Organisation (RSO)
