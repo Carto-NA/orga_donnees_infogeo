@@ -3,7 +3,11 @@ Dénomination des champs communs
 
 *Afin d'éviter les problèmes d'export des données, notamment au format shape, il est recommandé de limiter à 10 caractères le nom des attributs.*
 
-La dénomination des attributs reste libre mais doit-être explicite et faire l'objet d'un commentaire.
+La dénomination des champs reste libre mais doit-être explicite et faire l'objet d'un commentaire. Ils doivent :
+- être au singulier
+- ne pas comporter d'espace
+- ne pas avoir de caractère accentué
+- éviter les lettres en majuscule
 
 Certains champs doivent respectés une règle de nommage, un type et doivent être présents dans l'ensemble des classes d'entités et tables de donnée gérées par l'unité SIG lorsque cela est nécessaire :
 | Champ| Type | Contrainte | Descritpion |
