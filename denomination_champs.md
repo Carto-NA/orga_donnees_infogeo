@@ -10,21 +10,28 @@ Certains champs doivent respectés une règle de nommage, un type et doivent êt
 |----|----|----|----|
 |id | serial | not null | Identifiant non signifiant |
 | numcom | varchar(5) | | Code INSEE de la commune |
+| insee_com | varchar(5) | | Code INSEE de la commune |
 | nomcom | varchar(150) | | Libellé de la commune |
+| insee_com | varchar(150) | | Libellé de la commune |
 | sirencom | varchar(9) | |  Code SIREN de la commune |
 | numreg | varchar(2) | |  Code de la région |
+| code_reg | varchar(2) | |  Code de la région |
 | nomreg | varchar(150) | |  Libellé de la région |
+| nom_reg | varchar(150) | |  Libellé de la région |
 | numreg2015 | varchar(2) | |  Code de la région avant le 31 décembre 2015 |
 | nomreg2015 | varchar(150) | |  Libellé de la région avant le 31 décembre 2015 |
 | numdep | varchar(2) | |  Code du département |
+| code_dep | varchar(2) | |  Code du département |
 | nomdep | varchar(150) | |  Libellé du département |
+| nom_dep | varchar(150) | |  Libellé du département |
 | numepci | varchar(9)  | | Code EPCI |
+| siren_epci | varchar(9)  | | Code EPCI |
 | nomepci | varchar(150) | |  Libellé d'EPCI |
 | typeepci | varchar(2) | |  Type d'EPCI |
 | numtc | varchar(9) | |  Code du territoire de contractualisation |
+| code_tc | varchar(9) | |  Code du territoire de contractualisation |
 | nomtc | varchar(200) | |  Nom du territoire de contractualisation |
-| numte |  varchar(9) | |  Code du territoire de contractualisation |
-| nomte |  varchar(150) | |  Libellé du territoire de contractualisation |
+| nom_tc | varchar(200) | |  Nom du territoire de contractualisation |
 | numcadet | varchar(11) | |  Code du territoire CADET |
 | nomcadet | varchar(150) | |  Libellé du territoire CADET |
 | numte | varchar(5)  | | Code du territoire d'élu |
@@ -41,6 +48,7 @@ Certains champs doivent respectés une règle de nommage, un type et doivent êt
 | style_code | varchar(7) | |  Code couelur en hexadécimal |
 | commentaire | text | |  Commentaires |
 | geom | varchar(10) | | Géométrie de l'objet |
+| shape | varchar(10) | | Géométrie de l'objet |
 | src_geom | varchar(10) | | Code du référentiel géographique utilisé pour la saisie (référence à la table de valeur lt_src_geom) |
 | annee | varchar(4) |  | Année de la donnée |
 | semantique_val | boolean | | La donnée sémantique est validée |
