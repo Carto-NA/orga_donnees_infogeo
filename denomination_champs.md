@@ -5,7 +5,7 @@ Dénomination des champs communs
 
 La dénomination des attributs reste libre mais doit-être explicite et faire l'objet d'un commentaire.
 
-Seuls certains champs doivent respectés une règle de nommage et doivent être présents dans l'ensemble des classes d'entités et tables de donnée gérées par l'unité SIG lorsque cela est nécessaire :
+Certains champs doivent respectés une règle de nommage, un type et doivent être présents dans l'ensemble des classes d'entités et tables de donnée gérées par l'unité SIG lorsque cela est nécessaire :
 | Champ| Type | Contrainte | Descritpion |
 |----|----|----|----|
 |id | serial | not null | Identifiant non signifiant |
