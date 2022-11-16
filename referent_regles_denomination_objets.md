@@ -1,4 +1,4 @@
-# Règles et bonnes partiques
+# Règles et bonnes pratiques
 
 >   Ce document s'adresse aux référents géographique, thématiciens ou aux responsables des projets au sein de la DITP.
 
