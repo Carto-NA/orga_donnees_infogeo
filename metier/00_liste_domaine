@@ -226,6 +226,25 @@ domDict = {"Engagé RSE":"Engagé RSE ", "Engagé RSO": "Engagé RSO", "Lucie": 
 for code in domDict:        
     arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
 
+##########################################
+#### Liste "filière"
+
+# Set local parameters
+domName = "lt_env_rso_filiere"
+domDesc = "Liste des filières"
+
+# Process: Create the coded value domain
+arcpy.CreateDomain_management(arcpy.env.workspace, domName, domDesc, "TEXT", "CODED")
+
+# Store all the domain values in a dictionary with the domain code as the "key" 
+# and the domain description as the "value" (domDict[code])
+domDict = {"NR": "Non renseigné", "Agroalimentaire":"Agroalimentaire"}
+
+# Process: Add valid material types to the domain
+# use a for loop to cycle through all the domain codes in the dictionary
+for code in domDict:        
+    arcpy.AddCodedValueToDomain_management(arcpy.env.workspace, domName, code, domDict[code])
+
 #### PCAET
 
 ##########################################
