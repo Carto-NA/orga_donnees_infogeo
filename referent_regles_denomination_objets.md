@@ -16,6 +16,17 @@
     * Privilégier le singulier
     * Penser à des noms génériques
     
+    ***Périmètre :***
+    _fr ==> France
+    _reg75 ==> Région
+    _dep86 ==> Département
+    _com86170 ==> Commune
+    
+    ***Source :***
+    dreal_ ==> DREAL
+    insee_ ==> INSEE
+    ign_ ==> IGN
+    
 
 4. Noms de colonne
     * Préfixer toutes les colonnes
