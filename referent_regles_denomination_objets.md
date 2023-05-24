@@ -27,6 +27,9 @@
     insee_ ==> INSEE
     ign_ ==> IGN
     
+    ***Historisation :***
+    2022_ ==> 
+    2021_ ==>
 
 4. Noms de colonne
     * Préfixer toutes les colonnes
