@@ -26,6 +26,9 @@
     dreal_ ==> DREAL
     insee_ ==> INSEE
     ign_ ==> IGN
+    sncf_ ==> SNCF
+    
+    [Lister les préfixe]
     
     ***Historisation :***
     2022_ ==> 
